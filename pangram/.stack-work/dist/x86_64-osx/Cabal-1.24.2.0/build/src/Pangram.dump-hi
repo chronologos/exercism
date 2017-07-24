@@ -1,0 +1,145 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-08 00:58:06.871519 UTC
+
+interface pangram-1.1.0.3-502vbwqrW7LEKHsipyq5bN:Pangram 8002
+  interface hash: f807359e4c1a74ab4b59e651552fcd83
+  ABI hash: b231f3f5da80814bd021946339c2807c
+  export-list hash: cf718e4f5c933ca02b27c3d25177e0f1
+  orphan hash: 607c31fda4b4665f5fd5ec578c869a79
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Pangram.isPangram
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  base-4.9.1.0:Data.Char 01433d23661edb6e5ef1536ef1e6774c
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Unicode a175ecf20bf1272d9ae31337e7da43ab
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Set 3ed2324fd1e757464a8ac2b636a64e5a
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base 1a2f735add6da1c0a9571441c327c084
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+243cb081cb5f98eb67b9324b506d0028
+  $sfromList :: [GHC.Types.Char] -> Data.Set.Base.Set GHC.Types.Char
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: [GHC.Types.Char]) ->
+                 case ds of wild {
+                   [] -> Data.Set.Base.Tip @ GHC.Types.Char
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        []
+                        -> case x of dt { GHC.Types.C# ipv ->
+                           Data.Set.Base.Bin
+                             @ GHC.Types.Char
+                             1#
+                             dt
+                             (Data.Set.Base.Tip @ GHC.Types.Char)
+                             (Data.Set.Base.Tip @ GHC.Types.Char) }
+                        : ipv ipv1
+                        -> case x of wild2 { GHC.Types.C# c1 ->
+                           case ipv of wild3 { GHC.Types.C# c2 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.geChar# c1 c2) of wild4 {
+                             GHC.Types.False
+                             -> Pangram.$wgo5
+                                  1#
+                                  (Data.Set.Base.Bin
+                                     @ GHC.Types.Char
+                                     1#
+                                     wild2
+                                     (Data.Set.Base.Tip @ GHC.Types.Char)
+                                     (Data.Set.Base.Tip @ GHC.Types.Char))
+                                  wild1
+                             GHC.Types.True
+                             -> Pangram.$sfromList_go5
+                                  (Data.Set.Base.Bin
+                                     @ GHC.Types.Char
+                                     1#
+                                     wild2
+                                     (Data.Set.Base.Tip @ GHC.Types.Char)
+                                     (Data.Set.Base.Tip @ GHC.Types.Char))
+                                  wild1 } } } } }) -}
+4ec51c14e984c317f4b68ef65d169da7
+  $sfromList_go5 ::
+    Data.Set.Base.Set GHC.Types.Char
+    -> [GHC.Types.Char] -> Data.Set.Base.Set GHC.Types.Char
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+933189f22bd38903c4295b5bd291bf28
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Pangram.$trModule2
+                   Pangram.$trModule1) -}
+f85b802fae51285d5a6bb4851eb9d194
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Pangram"#) -}
+4612a520dad6c734bc2d57572c49349e
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "pangram-1.1.0.3-502vbwqrW7LEKHsipyq5bN"#) -}
+777f7af96b8994eaa773549802474565
+  $w$sgo5 ::
+    GHC.Prim.Char#
+    -> Data.Set.Base.Set GHC.Types.Char
+    -> Data.Set.Base.Set GHC.Types.Char
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
+e254b4e7a2e8553dce444f32e98b7590
+  $wgo5 ::
+    GHC.Prim.Int#
+    -> Data.Set.Base.Set GHC.Types.Char
+    -> [GHC.Types.Char]
+    -> Data.Set.Base.Set GHC.Types.Char
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+cdcf1df921575198bbe8fc8c60aeae9d
+  isPangram :: GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (text :: GHC.Base.String) ->
+                 Data.Set.Base.$fEqSet_$c==
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   (Pangram.isPangram_go text (Data.Set.Base.Tip @ GHC.Types.Char))
+                   Pangram.isPangram1) -}
+0acfcf24203795394793644fa1852c41
+  isPangram1 :: Data.Set.Base.Set GHC.Types.Char
+  {- Unfolding: (Pangram.$sfromList Pangram.isPangram2) -}
+b76c137b7bc44a9991561181703f5406
+  isPangram2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "abcdefghijklmnopqrstuvwxyz"#) -}
+01cb48354bfaf6d0eb439c19d6aeaed3
+  isPangram_go ::
+    [GHC.Types.Char]
+    -> Data.Set.Base.Set GHC.Types.Char
+    -> Data.Set.Base.Set GHC.Types.Char
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+"SPEC/Pangram fromList @ Char" [ALWAYS] forall ($dOrd :: GHC.Classes.Ord
+                                                           GHC.Types.Char)
+  Data.Set.Base.fromList @ GHC.Types.Char $dOrd = Pangram.$sfromList
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
